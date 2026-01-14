@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parnet{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightblue;
+            display: flex;
+            gap: 20px;
+        }
+        .child{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+
+        }
+        /* 
+            Position relative:
+                - It will not leave its orignal space
+                - It will move wrt its orignal space
+            
+            Position absolute:
+                - It will leave its orignal space
+                - It will move wrt its nearest parent poistion element
+        
+        */
+        #child3{
+            background-color: purple;
+            color: white;
+            position: absolute;
+            top: 300px;
+            left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parnet">
+        <div class="child" id="child1">1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+        <div class="child" id="child4">4</div>
+    </div>
+</body>
+</html>

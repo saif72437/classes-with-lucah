@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+            background-color: #DBDBDB;
+            display: flex;
+            justify-content: center;
+            padding: 2vw;
+            align-items: start;
+        }
+        .navbar{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            background-color: #EDEDED;
+            padding: 10px 20px;
+            border-radius: 50px;
+            align-items: center
+
+
+        }
+        li{
+            list-style: none;
+            color: #11250E;
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 10px 30px;
+            border-radius: 30px;
+        }
+        li:hover{
+            background-color: #ABD2A6;
+            transition: all ease-in-out 0.3s;
+            cursor: pointer;
+            
+        }
+        .badge{
+            color: #11250E;
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            background-color: #89b683;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        li:nth-child(1){
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <li>Home <div class="badge">4</div></li>
+            <li>Product</li>
+            <li>Blog</li>
+            <li>About</li>
+        </div>
+    </div>
+</body>
+</html>

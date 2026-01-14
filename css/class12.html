@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .main {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/007/474/177/non_2x/silhouette-shadow-of-forest-scene-free-vector.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            width: 400px;
+            height: 500px;
+            background-color: rgba(255, 255, 255, 0.631);
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.7px);
+            -webkit-backdrop-filter: blur(9.7px);
+            border: 1px solid rgba(255, 255, 255, 0.63);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+
+        .login-box h2 {
+            font-size: 32px;
+            color: #152938;
+        }
+        .input-container{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 2px solid  #152938;
+            margin-top: 20px;
+            width: 80%;
+        }
+        .input-container input{
+            background-color: transparent;
+            padding: 10px 12px;
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 18px;
+            color:  #152938;
+            font-weight: 400;
+        }
+        input::placeholder{
+            font-weight: 400;
+            color:  #152938;
+
+        
+        }
+        .forgot-password-container{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            color:  #152938;
+        }
+        .remember-me{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        a{
+            color:  #152938;
+            text-decoration: none;
+        }
+        .login{
+            width: 80%;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            background-color:  #152938;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+        }
+        .account{
+            color:  #152938;
+            margin-top: 10px;
+
+        }
+        .register{
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="login-box">
+            <h2>Login</h2>
+            <div class="input-container">
+                <input type="text" placeholder="Email">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 9h5m3 0h2M7 12h2m3 0h5M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-6.616a1 1 0 0 0-.67.257l-2.88 2.592A.5.5 0 0 1 8 18.477V17a1 1 0 0 0-1-1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" />
+                </svg>
+
+
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Password">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M8 10V7a4 4 0 1 1 8 0v3h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1Zm2-3a2 2 0 1 1 4 0v3h-4V7Zm2 6a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Z"
+                        clip-rule="evenodd" />
+                </svg>
+
+
+
+            </div>
+            <div class="forgot-password-container">
+                <div class="remember-me">
+                    <input type="checkbox" name="" id="">
+                    <p>Remember me</p>
+                </div>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button class="login">Login</button>
+            <p class="account">Don't have an account <a href="#" class="register">Register Now</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
